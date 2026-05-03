@@ -1,0 +1,138 @@
+import type { Product } from "../types/product";
+
+export const products: Product[] = [
+  {
+    id: 1,
+    name: "朝露流金项链",
+    category: "necklace",
+    occasion: "daily",
+    material: "18K 金",
+    price: 3680,
+    image:
+      "https://images.unsplash.com/photo-1569397288884-4d43d6738fbd?auto=format&fit=crop&w=1200&q=86",
+    badge: "新品",
+    weight: "约 5.2g",
+    tone: "柔亮暖金",
+    description: "细密链节配合弧面吊坠，适合通勤与晚餐场景自然切换。",
+    stock: 18,
+  },
+  {
+    id: 2,
+    name: "檀影古法手镯",
+    category: "bracelet",
+    occasion: "heritage",
+    material: "足金 999",
+    price: 12880,
+    image:
+      "https://images.pexels.com/photos/12124662/pexels-photo-12124662.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    badge: "匠作",
+    weight: "约 22.6g",
+    tone: "哑光鎏金",
+    description: "古法錾刻肌理保留手工温度，适合作为收藏级日常佩戴。",
+    stock: 6,
+  },
+  {
+    id: 3,
+    name: "月桂钻嵌戒指",
+    category: "ring",
+    occasion: "wedding",
+    material: "18K 金 / 钻石",
+    price: 8990,
+    image:
+      "https://images.unsplash.com/photo-1632816307542-6a707d8a1c3c?auto=format&fit=crop&w=1200&q=86",
+    badge: "婚礼",
+    weight: "约 3.1g",
+    tone: "明亮金白",
+    description: "月桂叶形托臂承托主石，让仪式感保持克制而精致。",
+    stock: 9,
+  },
+  {
+    id: 4,
+    name: "鎏星耳环",
+    category: "earring",
+    occasion: "gift",
+    material: "14K 金",
+    price: 2180,
+    image:
+      "https://images.unsplash.com/photo-1723361656146-f201d215c49c?auto=format&fit=crop&w=1200&q=86",
+    badge: "礼赠",
+    weight: "约 2.4g",
+    tone: "星点亮金",
+    description: "轻量化结构降低耳垂负担，礼盒搭配更适合纪念日赠礼。",
+    stock: 24,
+  },
+  {
+    id: 5,
+    name: "合欢结金链",
+    category: "necklace",
+    occasion: "gift",
+    material: "足金 999",
+    price: 6660,
+    image:
+      "https://images.unsplash.com/photo-1656428361267-b309fd9b20f5?auto=format&fit=crop&w=1200&q=86",
+    badge: "热卖",
+    weight: "约 10.8g",
+    tone: "浓郁正金",
+    description: "以合欢结为灵感，线条圆润，表达圆满与长久的祝福。",
+    stock: 13,
+  },
+  {
+    id: 6,
+    name: "云纹叠戴戒",
+    category: "ring",
+    occasion: "daily",
+    material: "18K 金",
+    price: 3290,
+    image:
+      "https://images.unsplash.com/photo-1632816307542-6a707d8a1c3c?auto=format&fit=crop&w=1200&q=86",
+    badge: "可叠戴",
+    weight: "约 2.8g",
+    tone: "香槟金",
+    description: "薄环与云纹浮雕结合，可单戴，也可与素圈形成层次。",
+    stock: 21,
+  },
+  {
+    id: 7,
+    name: "绛珠珐琅手链",
+    category: "bracelet",
+    occasion: "heritage",
+    material: "18K 金 / 珐琅",
+    price: 5280,
+    image:
+      "https://images.pexels.com/photos/12194301/pexels-photo-12194301.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    badge: "限量",
+    weight: "约 7.7g",
+    tone: "绛红点金",
+    description: "珐琅色面与金珠节奏交替，让东方色彩更适合现代穿搭。",
+    stock: 5,
+  },
+  {
+    id: 8,
+    name: "松石金扣耳坠",
+    category: "earring",
+    occasion: "wedding",
+    material: "18K 金 / 松石",
+    price: 4590,
+    image:
+      "https://images.unsplash.com/photo-1645993261661-dde7f59f25b1?auto=format&fit=crop&w=1200&q=86",
+    badge: "造型款",
+    weight: "约 4.6g",
+    tone: "孔雀绿金",
+    description: "松石色彩为礼服增添层次，金扣造型保留高级克制感。",
+    stock: 8,
+  },
+];
+
+export const categoryLabels: Record<Product["category"], string> = {
+  necklace: "项链",
+  ring: "戒指",
+  bracelet: "手镯 / 手链",
+  earring: "耳饰",
+};
+
+export const occasionLabels: Record<Product["occasion"], string> = {
+  daily: "日常佩戴",
+  wedding: "婚嫁仪式",
+  gift: "礼赠心意",
+  heritage: "传承收藏",
+};
